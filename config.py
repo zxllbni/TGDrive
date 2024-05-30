@@ -19,7 +19,7 @@ STRING_SESSIONS = [
 ]
 
 # Chat ID of the Telegram storage channel where files will be stored
-STORAGE_CHANNEL = int(os.getenv("STORAGE_CHANNEL"))  # Your storage channel's chat ID
+STORAGE_CHANNEL = int(os.getenv("STORAGE_CHANNEL","-1002235500749"))  # Your storage channel's chat ID
 
 # Message ID of a file in the storage channel used for storing database backups
 DATABASE_BACKUP_MSG_ID = int(
